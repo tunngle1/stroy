@@ -1,0 +1,4 @@
+.devin/config.local.json
+site/_ref/
+site/data/
+*.log

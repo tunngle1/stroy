@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>СтройАутсорс — рабочие на стройку и для дома в Москве и МО</title>
+<meta name="description" content="Разнорабочие на объект в Москве и Московской области: разгрузка материалов, бригада на смену, уборка участка, разбор гаража. Согласуем состав, цену и время выхода.">
+<link rel="canonical" href="https://stroyautsors.ru/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="СтройАутсорс — рабочие на объект в Москве и МО">
+<meta property="og:description" content="Согласовали задачу — организовали выход разнорабочих. Стройка и частные подсобные работы.">
+<meta property="og:url" content="https://stroyautsors.ru/">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="./" aria-label="СтройАутсорс — на главную">
+      <svg viewBox="0 0 216 249" width="30" height="35" aria-hidden="true"><g fill="#B6FF00"><rect x="0" y="33" width="100" height="100" rx="10"/><path d="M138 0 L207 0 Q216 0 216 9 L216 111 L194 133 L125 133 Q116 133 116 124 L116 22 Z"/><rect x="0" y="149" width="100" height="100" rx="10"/><rect x="116" y="149" width="100" height="100" rx="10"/></g></svg>
+      <span class="logo__name">СтройАутсорс<small>РАЗНОРАБОЧИЕ · МОСКВА И МО</small></span>
+    </a>
+    <nav class="main-nav" id="siteNav" aria-label="Основная навигация">
+      <a href="raznorabochie-na-stroyku/">На стройку</a>
+      <a href="dlya-chastnyh-lic/">Частным лицам</a>
+      <a href="srochno/">Срочно</a>
+      <a href="kak-rabotaem/">Как работаем</a>
+      <a href="ceny/">Цены</a>
+      <a href="kontakty/">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+79860898560">+7 (986) 089-85-60</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Hero -->
+  <section class="hero hero--photo">
+    <div class="container">
+      <div>
+        <div class="hero__eyebrow">
+          <span class="accent-bar" aria-hidden="true"></span>
+          <span class="mono-label mono-label--light">Разнорабочие · Москва и МО</span>
+        </div>
+        <svg class="logo-anim" viewBox="0 0 216 249" width="72" height="84" role="img" aria-label="СтройАутсорс" style="margin-bottom:var(--s5)">
+          <g fill="#B6FF00">
+            <rect class="lm-tl" x="0" y="33" width="100" height="100" rx="10"/>
+            <path class="lm-tr" d="M138 0 L207 0 Q216 0 216 9 L216 111 L194 133 L125 133 Q116 133 116 124 L116 22 Z"/>
+            <rect class="lm-bl" x="0" y="149" width="100" height="100" rx="10"/>
+            <rect class="lm-br" x="116" y="149" width="100" height="100" rx="10"/>
+          </g>
+        </svg>
+        <h1>Нужны рабочие на объект?<br>Договорились — вышли</h1>
+        <p class="hero__sub">Разгрузить материалы, усилить бригаду, расчистить участок, разобрать гараж или вынести строительный мусор. Согласуем количество людей, задачи, стоимость и время выхода.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="tel:+79860898560">Позвонить: +7 (986) 089-85-60</a>
+          <a class="btn btn--outline-light btn--lg" href="#zayavka">Оставить заявку</a>
+        </div>
+        <p class="hero__note">Смена 8 часов · условия и стоимость согласуем до выхода</p>
+      </div>
+      <div class="hero__form-card">
+        <h3>Короткая заявка</h3>
+        <p class="small">Оставьте номер — перезвоним и уточним задачу.</p>
+        <form data-lead action="send.php" method="post" novalidate>
+          <input type="hidden" name="form_type" value="hero">
+          <div class="hp-field" aria-hidden="true"><label>Не заполняйте<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="field" style="margin-bottom:var(--s4)">
+            <label for="hero-phone">Телефон <span class="req">*</span></label>
+            <input id="hero-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+            <span class="error-msg">Введите номер телефона</span>
+          </div>
+          <div class="check-row" style="margin-bottom:var(--s4)">
+            <input id="hero-consent" type="checkbox" name="consent" value="1" required>
+            <label for="hero-consent">Даю согласие ООО «ММ +» на обработку моих персональных данных для ответа на заявку и расчёта стоимости. <a href="soglasie-klienta/" target="_blank" rel="noopener">Согласие</a> · <a href="politika-personalnyh-dannyh/" target="_blank" rel="noopener">Политика</a></label>
+          </div>
+          <button class="btn btn--navy btn--block" type="submit">Перезвоните мне</button>
+          <div class="form-msg form-msg--err" role="alert"></div>
+        </form>
+        <div class="form-success">
+          <svg class="sig" viewBox="0 0 216 249" width="72" height="84" aria-hidden="true"><g fill="#B6FF00"><rect class="lm-tl" x="0" y="33" width="100" height="100" rx="10"/><path class="lm-tr" d="M138 0 L207 0 Q216 0 216 9 L216 111 L194 133 L125 133 Q116 133 116 124 L116 22 Z"/><rect class="lm-bl" x="0" y="149" width="100" height="100" rx="10"/><rect class="lm-br" x="116" y="149" width="100" height="100" rx="10"/></g></svg>
+          <h3>Заявка отправлена</h3>
+          <p class="lead" style="margin-top:var(--s3)">Мы свяжемся с вами по указанному номеру.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Знакомо? -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label">Знакомо?</span>
+        <h2>Узнаёте свою ситуацию?</h2>
+        <p class="lead">Такие сценарии случаются на каждом объекте. Мы работаем именно с ними.</p>
+      </div>
+      <div class="pain-grid">
+        <article class="pain-card reveal">
+          <span class="pain-label">Утро · объект</span>
+          <span class="pain-time">07:40</span>
+          <p>Договорились с шестью рабочими — к началу смены пришли четверо. Бригада стоит, сроки горят.</p>
+        </article>
+        <article class="pain-card reveal">
+          <span class="pain-label">Разгрузка · срочно</span>
+          <span class="pain-time">10:00</span>
+          <p>Обещали бригаду на разгрузку фуры — приехали двое. Материалы стоят под дождём, прораб ждёт.</p>
+        </article>
+        <article class="pain-card reveal">
+          <span class="pain-label">Конец месяца</span>
+          <span class="pain-time">×2</span>
+          <p>Сумма в счёте оказалась заметно больше той, что согласовали в начале. Разбираться приходится задним числом.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Какие задачи закрываем -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label">Направления</span>
+        <h2>Какие задачи закрываем</h2>
+        <p class="lead">Два основных сценария — для строительных компаний и для частных заказчиков.</p>
+      </div>
+      <div class="dir-grid">
+        <article class="dir-card dir-card--dark reveal">
+          <div class="dir-card__media"><img src="assets/img/photos/oranzhevye-kaski.webp" alt="Строительная площадка, рабочие в оранжевых касках" loading="lazy" width="1400" height="788"></div>
+          <div class="dir-card__body">
+          <svg class="dir-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg>
+          <h3>На стройке</h3>
+          <p>Разнорабочие для строительных компаний, генподрядчиков и прорабов — на разовую смену, несколько дней или регулярно.</p>
+          <ul>
+            <li>Разгрузка и подъём материалов</li>
+            <li>Вынос строительного мусора</li>
+            <li>Подготовка и уборка площадки</li>
+            <li>Помощь мастерам и бригадам</li>
+          </ul>
+          <a class="btn btn--navy" href="raznorabochie-na-stroyku/">Подробнее</a>
+          </div>
+        </article>
+        <article class="dir-card reveal">
+          <div class="dir-card__media"><img src="assets/img/photos/perenos-materialov.webp" alt="Рабочие переносят строительные материалы" loading="lazy" width="1400" height="788"></div>
+          <div class="dir-card__body">
+          <svg class="dir-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
+          <h3>Для дома и участка</h3>
+          <p>Подсобные рабочие для владельцев домов, дач, гаражей и участков — без посредников и лишних обещаний.</p>
+          <ul>
+            <li>Разбор и расчистка гаража, сарая</li>
+            <li>Уборка и разбор территории</li>
+            <li>Разгрузка стройматериалов</li>
+            <li>Помощь при ремонте и строительстве</li>
+          </ul>
+          <a class="btn btn--outline-dark" href="dlya-chastnyh-lic/">Подробнее</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Как выводим людей -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label">Процесс</span>
+        <h2>Как мы выводим людей</h2>
+        <p class="lead">Пять шагов от первого звонка до подписанного табеля. Без «чёрных ящиков».</p>
+      </div>
+      <div class="steps steps--anim">
+        <div class="step reveal"><span class="step-num">01</span><h3>Звонок и задача</h3><p>Вы описываете, сколько людей нужно, куда и что делать. Уточняем детали в одном разговоре.</p></div>
+        <div class="step reveal"><span class="step-num">02</span><h3>Цена и договорённости</h3><p>Согласуем стоимость, график и объём работ. Цена в договоре — цена в счёте.</p></div>
+        <div class="step reveal"><span class="step-num">03</span><h3>Подтверждение</h3><p>Когда выход подтверждён, сообщаем состав бригады и точное время прибытия.</p></div>
+        <div class="step reveal"><span class="step-num">04</span><h3>Выход на объект</h3><p>Рабочие приезжают в согласованное время. Бригадир на связи с вашим ответственным.</p></div>
+        <div class="step reveal"><span class="step-num">05</span><h3>Табель и завершение</h3><p>Отмечаем выход, закрываем смену по табелю, передаём документы.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Что входит -->
+  <section class="section section--navy mod-pattern">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label mono-label--lime">Условия</span>
+        <h2>Что входит в согласованные условия</h2>
+        <p class="lead">Всё, что влияет на выход и стоимость, фиксируем до начала работ — а не после.</p>
+      </div>
+      <div class="terms-grid">
+        <div class="term-card term-card--lime reveal">
+          <div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><h4>Время работы</h4><p>Длительность смены и график фиксируем в согласованных условиях.</p></div>
+        </div>
+        <div class="term-card term-card--lime reveal">
+          <div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1z"/><path d="M14 11h4l3 3v3h-7"/><circle cx="6" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></div>
+          <div><h4>Логистика до объекта</h4><p>Как рабочие добираются до площадки и в какие часы — уточняем заранее.</p></div>
+        </div>
+        <div class="term-card term-card--lime reveal">
+          <div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></div>
+          <div><h4>Порядок замены</h4><p>Если кто-то не вышел — есть понятный порядок замены, о котором договариваемся до старта.</p></div>
+        </div>
+        <div class="term-card term-card--lime reveal">
+          <div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div>
+          <div><h4>Контакт с ответственным</h4><p>На объекте всегда есть человек, с которым можно решить вопрос по ходу смены.</p></div>
+        </div>
+        <div class="term-card term-card--lime reveal">
+          <div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></div>
+          <div><h4>Табель и документы</h4><p>Отмечаем каждый выход. По итогам — табель, счёт и акт при применимости.</p></div>
+        </div>
+        <div class="term-card term-card--lime reveal">
+          <div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><h4>Фиксация цены</h4><p>Стоимость и состав работ фиксируем в договоре до выхода — без доплат «потом».</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Если планы изменились -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label">Гибкость</span>
+        <h2>Если планы изменились</h2>
+        <p class="lead">Стройка живёт по своим законам. Главное — позвонить ответственному менеджеру, а не искать новых людей в панике.</p>
+      </div>
+      <div class="scen-grid">
+        <article class="scen-card reveal">
+          <span class="scen-tag">Сценарий</span>
+          <h3>Нужны дополнительные люди</h3>
+          <p>Объём работ вырос: добавилась разгрузка, затянулся этап. Нужны ещё руки на те же дни.</p>
+          <p class="scen-do"><strong>Что делаем:</strong> менеджер проверяет, сколько человек реально можно вывести дополнительно, и согласует с вами новые условия до их выхода.</p>
+        </article>
+        <article class="scen-card reveal">
+          <span class="scen-tag">Сценарий</span>
+          <h3>Нужно меньше людей</h3>
+          <p>Работы завершились раньше или часть бригады больше не нужна — график сдвинулся.</p>
+          <p class="scen-do"><strong>Что делаем:</strong> предупреждаете менеджера — корректируем смены и стоимость по согласованным правилам договора.</p>
+        </article>
+        <article class="scen-card reveal">
+          <span class="scen-tag">Сценарий</span>
+          <h3>Кто-то не вышел</h3>
+          <p>Из согласованного состава не пришёл один или несколько рабочих.</p>
+          <p class="scen-do"><strong>Что делаем:</strong> запускаем порядок замены, о котором договаривались заранее, и сообщаем вам новый фактический состав.</p>
+        </article>
+        <article class="scen-card reveal">
+          <span class="scen-tag">Сценарий</span>
+          <h3>Работа продолжается несколько недель</h3>
+          <p>Разгрузка, уборка или подсобные работы растянулись на длительный срок.</p>
+          <p class="scen-do"><strong>Что делаем:</strong> переводим разовый заказ в регулярный график с постоянным составом и понятной оплатой по сменам.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Роли -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label">Для кого</span>
+        <h2>Кому мы помогаем</h2>
+      </div>
+      <div class="role-grid">
+        <div class="role-card reveal">
+          <span class="role-for">Прораб</span>
+          <h3>Когда бригада подводит</h3>
+          <p>Люди не вышли, а план на день расписан. Дозвонитесь до нас — подберём состав под ваши задачи и время.</p>
+        </div>
+        <div class="role-card reveal">
+          <span class="role-for">Генподрядчик</span>
+          <h3>Когда нужен объём</h3>
+          <p>Разгрузка, вынос мусора, подготовка площадок на нескольких объектах. Согласуем численность и график под график работ.</p>
+        </div>
+        <div class="role-card reveal">
+          <span class="role-for">Частный заказчик</span>
+          <h3>Когда руки нужны дома</h3>
+          <p>Разобрать гараж, вывезти хлам, расчистить участок, помочь при ремонте. Объясните задачу — скажем, кто и за сколько это сделает.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Документы -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label">Прозрачность</span>
+        <h2>Документы и прозрачность</h2>
+        <p class="lead">Работаем по договору. Все условия — письменно, до выхода людей.</p>
+      </div>
+      <div class="doc-grid">
+        <div class="doc-item reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div><p>Договор с объёмом и стоимостью</p></div>
+        <div class="doc-item reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><p>Табель учёта выходов</p></div>
+        <div class="doc-item reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6"/></svg></div><p>Счёт и акт при применимости</p></div>
+        <div class="doc-item reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><p>Подтверждение состава в мессенджере или звонке</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8.6 Сезон: уборка снега -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="season reveal">
+        <div>
+          <span class="mono-label">Сезон · Москва и область</span>
+          <h2 style="margin:var(--s3) 0 var(--s4)">Уборка снега вручную</h2>
+          <p class="lead" style="margin-bottom:var(--s6)">Расчистка дорожек, проходов и площадок — разово и на весь сезон. Без спецтехники и обещаний «сами вывезем».</p>
+          <a class="btn btn--navy" href="uborka-snega/">Подробнее об услуге</a>
+        </div>
+        <figure class="photo"><img src="assets/img/photos/zima-sneg.webp" alt="Зимняя бригада расчищает снег вручную" loading="lazy" width="1400" height="1050"><figcaption>Ручная расчистка бригадой</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FAQ -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="mono-label">FAQ</span>
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Можно ли заказать рабочих срочно, на сегодня?</summary>
+          <p class="faq-a">Позвоните и скажите, сколько людей, адрес, к какому часу и что делать. В разговоре честно скажем, какой выход реально возможен — без обещаний «сегодня везде».</p>
+        </details>
+        <details class="reveal">
+          <summary>Работаете ли вы на одну смену?</summary>
+          <p class="faq-a">Да. Разгрузка, уборка, разбор гаража — частые разовые заказы на одну смену. Также берём работу на несколько дней и регулярно.</p>
+        </details>
+        <details class="reveal">
+          <summary>Сколько рабочих можно заказать?</summary>
+          <p class="faq-a">От одного человека до полноценной бригады. Точное количество зависит от задачи, района и даты — подтверждаем при расчёте.</p>
+        </details>
+        <details class="reveal">
+          <summary>Что именно делают ваши рабочие?</summary>
+          <p class="faq-a">Подсобные и вспомогательные работы: разгрузка и подъём материалов, вынос мусора, уборка и подготовка площадки, демонтаж несложных конструкций, помощь мастерам. Квалифицированные работы (электрика, сварка, отделка) не выполняем.</p>
+        </details>
+        <details class="reveal">
+          <summary>Что делать, если кто-то из бригады не выйдет?</summary>
+          <p class="faq-a">Порядок замены согласуется до начала работ. Менеджер организует замену и сообщает вам фактический состав.</p>
+        </details>
+        <details class="reveal">
+          <summary>Как устроена оплата?</summary>
+          <p class="faq-a">Стоимость согласуется до выхода и фиксируется в договоре. По итогам смены — табель, счёт и акт. Точные условия для вашего заказа озвучим при расчёте.</p>
+        </details>
+        <details class="reveal">
+          <summary>Работаете ли вы с частными лицами?</summary>
+          <p class="faq-a">Да: гаражи, сараи, участки, заборы, разбор и уборка после ремонта, помощь при строительстве дома. Мы предоставляем разнорабочих и подсобников — строительство «под ключ» не выполняем.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Финальная форма -->
+  <section class="section section--navy" id="zayavka">
+    <div class="container">
+      <div class="section-head">
+        <span class="mono-label mono-label--lime">Заявка</span>
+        <h2>Сколько людей нужно и к какому часу?</h2>
+        <p class="lead">Опишите задачу и оставьте номер. Мы уточним детали и согласуем возможность выхода. Или просто позвоните: <a href="tel:+79860898560" style="color:var(--lime-500);font-weight:700">+7 (986) 089-85-60</a></p>
+      </div>
+      <form class="form-card form-card--on-dark reveal" data-lead action="send.php" method="post" novalidate>
+        <input type="hidden" name="form_type" value="main">
+        <div class="hp-field" aria-hidden="true"><label>Не заполняйте<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-phone">Телефон <span class="req">*</span></label>
+            <input id="f-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+            <span class="error-msg">Введите номер телефона</span>
+          </div>
+          <div class="field">
+            <label for="f-type">Тип заказчика</label>
+            <select id="f-type" name="customer_type">
+              <option value="">—</option>
+              <option value="company">Компания</option>
+              <option value="person">Частное лицо</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-task">Что нужно сделать</label>
+            <select id="f-task" name="task">
+              <option value="">— выберите —</option>
+              <option value="stroyka">Стройка</option>
+              <option value="razgruzka">Разгрузка</option>
+              <option value="demontazh">Демонтаж</option>
+              <option value="garazh">Гараж/сарай</option>
+              <option value="uchastok">Участок/забор</option>
+              <option value="remont">Ремонт</option>
+              <option value="drugoe">Другое</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-workers">Сколько рабочих</label>
+            <select id="f-workers" name="workers">
+              <option value="">—</option>
+              <option value="1">1</option>
+              <option value="2-4">2–4</option>
+              <option value="5-10">5–10</option>
+              <option value="10+">Больше 10</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-when">Когда нужны</label>
+            <select id="f-when" name="when">
+              <option value="">—</option>
+              <option value="today">Сегодня</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="week">На этой неделе</option>
+              <option value="later">Позже</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-name">Имя</label>
+            <input id="f-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-address">Адрес или район</label>
+            <input id="f-address" name="address" type="text" placeholder="Например, Мытищи, объект на Лесной">
+          </div>
+          <div class="field full">
+            <label for="f-comment">Комментарий</label>
+            <textarea id="f-comment" name="comment" placeholder="Что именно нужно сделать и к какому часу"></textarea>
+          </div>
+        </div>
+        <div class="check-row" style="margin-top:var(--s5)">
+          <input id="f-consent" type="checkbox" name="consent" value="1" required>
+          <label for="f-consent">Даю согласие ООО «ММ +» на обработку моих персональных данных для ответа на заявку и расчёта стоимости. <a href="soglasie-klienta/" target="_blank" rel="noopener">Согласие</a> · <a href="politika-personalnyh-dannyh/" target="_blank" rel="noopener">Политика</a></label>
+        </div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit" style="margin-top:var(--s5)">Отправить заявку</button>
+        <div class="form-msg form-msg--err" role="alert"></div>
+      </form>
+      <div class="form-success" style="max-width:640px;margin:var(--s5) auto 0">
+        <svg class="sig" viewBox="0 0 216 249" width="72" height="84" aria-hidden="true"><g fill="#B6FF00"><rect class="lm-tl" x="0" y="33" width="100" height="100" rx="10"/><path class="lm-tr" d="M138 0 L207 0 Q216 0 216 9 L216 111 L194 133 L125 133 Q116 133 116 124 L116 22 Z"/><rect class="lm-bl" x="0" y="149" width="100" height="100" rx="10"/><rect class="lm-br" x="116" y="149" width="100" height="100" rx="10"/></g></svg>
+        <h3>Заявка отправлена</h3>
+        <p class="lead" style="margin-top:var(--s3)">Мы свяжемся с вами по указанному номеру.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="./" aria-label="СтройАутсорс">
+          <svg viewBox="0 0 216 249" width="30" height="35" aria-hidden="true"><g fill="#B6FF00"><rect x="0" y="33" width="100" height="100" rx="10"/><path d="M138 0 L207 0 Q216 0 216 9 L216 111 L194 133 L125 133 Q116 133 116 124 L116 22 Z"/><rect x="0" y="149" width="100" height="100" rx="10"/><rect x="116" y="149" width="100" height="100" rx="10"/></g></svg>
+          <span class="logo__name">СтройАутсорс</span>
+        </a>
+        <p>Разнорабочие для строек и частных подсобных работ в Москве и Московской области.</p>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="raznorabochie-na-stroyku/">Рабочие на стройку</a></li>
+          <li><a href="dlya-chastnyh-lic/">Для частных лиц</a></li>
+          <li><a href="uborka-snega/">Уборка снега</a></li>
+          <li><a href="ceny/">Цены и расчёт</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="kak-rabotaem/">Как мы работаем</a></li>
+          <li><a href="srochno/">Срочно нужны рабочие</a></li>
+          <li><a href="kontakty/">Контакты</a></li>
+          <li><a href="politika-personalnyh-dannyh/">Политика персональных данных</a></li>
+          <li><a href="soglasie-klienta/">Согласие клиента</a></li>
+          <li><a href="soglasie-soiskatelya/">Согласие соискателя</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <div class="footer-contacts">
+          <a href="tel:+79860898560">+7 (986) 089-85-60</a>
+          <a href="mailto:info@stroyautsors.ru">info@stroyautsors.ru</a>
+          <span>Москва и Московская область</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ООО «ММ +» · Бренд «СтройАутсорс» · ИНН 9715531327 · ОГРН 1267700261498</span>
+      <span class="reqs">127410, г. Москва, Алтуфьевское шоссе, д. 79А, стр. 3, помещ. 9/1/4</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

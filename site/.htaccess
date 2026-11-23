@@ -1,0 +1,16 @@
+# СтройАутсорс — Apache/.htaccess для Timeweb
+# Ошибки
+ErrorDocument 404 /404.html
+
+# HTTPS-редирект (раскомментировать после установки SSL)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Защита служебных файлов
+<FilesMatch "(^\.|\.(jsonl|log|sql|bak|md)$)">
+  Require all denied
+</FilesMatch>
+
+# Запрет индексации data/
+RedirectMatch 403 ^/data/.*

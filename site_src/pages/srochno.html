@@ -1,0 +1,66 @@
+<!-- /srochno/ -->
+<section class="page-hero page-hero--photo page-hero--srochno">
+  <div class="container">
+    <div>
+      <span class="mono-label mono-label--light">Срочный заказ</span>
+      <h1>Рабочие нужны срочно?</h1>
+      <p class="lead">Скажите, сколько людей, адрес, к какому часу и что делать. В разговоре скажем, какой выход реально возможен — без обещаний, которые не сможем выполнить.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="tel:+79860898560">Позвонить сейчас</a>
+      </div>
+      <p style="margin-top:var(--s4);font-size:20px">Или наберите:<br><a href="tel:+79860898560" style="font-family:var(--font-display);font-weight:800;font-size:clamp(28px,3vw,40px);color:var(--lime-500)">+7 (986) 089-85-60</a></p>
+    </div>
+    <div class="page-hero__side">
+      <a href="tel:+79860898560"><span>Звонок — быстрее всего</span><span>Нажмите →</span></a>
+      <a href="#obratny-zvonok"><span>Не можете говорить?</span><span>Оставить номер →</span></a>
+      <a href="../kak-rabotaem/"><span>Как мы работаем</span><span>5 шагов →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:760px">
+    <div class="section-head section-head--center">
+      <span class="mono-label">Что сказать по телефону</span>
+      <h2>Четыре вопроса — и мы уже считаем</h2>
+      <p class="lead">Подготовьте ответы — так быстрее договоримся о выходе.</p>
+    </div>
+    <div class="terms-grid" style="grid-template-columns:repeat(2,1fr)">
+      <div class="term-card reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><div><h4>Сколько людей</h4><p>От одного до бригады — назовите примерное число.</p></div></div>
+      <div class="term-card reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Адрес объекта</h4><p>Город, район, ориентир — точный адрес можно позже.</p></div></div>
+      <div class="term-card reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>К какому часу</h4><p>Время начала и сколько часов работать.</p></div></div>
+      <div class="term-card reveal"><div class="term-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div><div><h4>Что делать</h4><p>Разгрузить, убрать, разобрать — одна фраза достаточно.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray" id="obratny-zvonok">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <span class="mono-label">Обратный звонок</span>
+      <h2>Оставьте номер — перезвоним</h2>
+      <p class="lead">Если сейчас неудобно говорить, оставьте телефон. Мы перезвоним и уточним детали.</p>
+    </div>
+    <form class="form-card reveal" data-lead action="../send.php" method="post" novalidate>
+      <input type="hidden" name="form_type" value="callback">
+      <input type="hidden" name="page" value="/srochno/">
+      <div class="hp-field" aria-hidden="true"><label>Не заполняйте<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="field" style="margin-bottom:var(--s4)">
+        <label for="cb-phone">Телефон <span class="req">*</span></label>
+        <input id="cb-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+        <span class="error-msg">Введите номер телефона</span>
+      </div>
+      <div class="check-row" style="margin-bottom:var(--s4)">
+        <input id="cb-consent" type="checkbox" name="consent" value="1" required>
+        <label for="cb-consent">Даю согласие ООО «ММ +» на обработку моих персональных данных для ответа на заявку и расчёта стоимости. <a href="../soglasie-klienta/" target="_blank" rel="noopener">Согласие</a> · <a href="../politika-personalnyh-dannyh/" target="_blank" rel="noopener">Политика</a></label>
+      </div>
+      <button class="btn btn--navy btn--lg btn--block" type="submit">Перезвоните мне</button>
+      <div class="form-msg form-msg--err" role="alert"></div>
+    </form>
+    <div class="form-success" style="max-width:640px;margin:var(--s5) auto 0">
+      <svg class="sig" viewBox="0 0 216 249" width="72" height="84" aria-hidden="true"><g fill="#B6FF00"><rect class="lm-tl" x="0" y="33" width="100" height="100" rx="10"/><path class="lm-tr" d="M138 0 L207 0 Q216 0 216 9 L216 111 L194 133 L125 133 Q116 133 116 124 L116 22 Z"/><rect class="lm-bl" x="0" y="149" width="100" height="100" rx="10"/><rect class="lm-br" x="116" y="149" width="100" height="100" rx="10"/></g></svg>
+      <h3>Заявка отправлена</h3>
+      <p class="lead" style="margin-top:var(--s3)">Мы свяжемся с вами по указанному номеру.</p>
+    </div>
+  </div>
+</section>
