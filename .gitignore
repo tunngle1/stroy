@@ -1,4 +1,11 @@
 .devin/config.local.json
+build.py
+site/
+site_src/
+Аутсорсинг/
+фото/
+stroyautsors-site(1) (1).pdf
+СтройАутсорс — ТЗ на верстку сайта + политика и согласия — 21.11.2026.md
 site/_ref/
 site/data/
 *.log
