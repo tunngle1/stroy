@@ -3,6 +3,16 @@
   'use strict';
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  var SA_MESSENGERS = { telegram: '', whatsapp: '', max: '' };
+  var MSG_LABELS = { telegram: 'Telegram', whatsapp: 'WhatsApp', max: 'MAX' };
+  var MSG_ICONS = { telegram: 'TG', whatsapp: 'WA', max: 'MAX' };
+  document.querySelectorAll('[data-messenger-links]').forEach(function (box) {
+    var html = Object.keys(SA_MESSENGERS).filter(function (k) { return SA_MESSENGERS[k]; }).map(function (k) {
+      return '<a class="messenger-link messenger-link--' + k + '" href="' + SA_MESSENGERS[k] + '" target="_blank" rel="noopener"><span aria-hidden="true">' + MSG_ICONS[k] + '</span><span>' + MSG_LABELS[k] + '</span></a>';
+    }).join('');
+    if (html) { box.innerHTML = html; box.hidden = false; }
+  });
+
   /* ---- Mobile menu ---- */
   var burger = document.querySelector('.burger');
   var nav = document.getElementById('siteNav');
